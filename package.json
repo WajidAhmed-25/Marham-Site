@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "backend": "cd restapi-node-postgres && npm start", 
-      "frontend": "cd Marham-ts && npm start" ,
-      "dev": "concurrently \"npm run backend\" \"npm run frontend\""
-
+    "backend": "cd node-postgresql-api && npm start",
+    "frontend": "cd Marham-ts && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vercel/postgres": "^0.5.1",
     "concurrently": "^8.2.2"
   }
 }
